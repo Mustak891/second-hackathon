@@ -28,8 +28,10 @@ export default function AddCamera(){
       const postData = async () => {
       try{ await fetch(api_url,
           {method:"POST", 
-          headers:{'Content-Type': 'application/json'},
-          body: JSON.stringify(values)})}
+          body: JSON.stringify(values),
+          mode: 'cors',
+          headers:{'Content-Type': 'application/json'}
+        })}
       catch{console.log((error) => error)}navigate('/')
     }
     return(
