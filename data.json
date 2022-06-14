@@ -1,0 +1,51 @@
+[
+    {
+     "id": "100",
+     "cameraname": "Canon EOS R5",
+     "description": "The EOS R5 is the latest model in the EOS family. It is a mirrorless camera that features a 24.2 megapixel sensor, a built-in wide-angle lens, and a built-in flash.",
+     "price": "1000.99",
+     "image": "https://assets.videomaker.com/2020/09/Canon-EOS-R5-primary.jpg"
+    },
+    {
+     "id": "101",
+     "cameraname": "Canon EOS R3",
+     "description": "The EOS R3 is the latest model in the EOS family. It is a mirrorless camera that features a 24.2 megapixel sensor, a built-in wide-angle lens, and a built-in flash.",
+     "price": "800.99",
+     "image": "https://cdn.mos.cms.futurecdn.net/PQ32V3YLPzcNjj33yRUKrD-970-80.jpg"
+    },
+    {
+     "id": "102",
+     "cameraname": "Sony A9 Mark II",
+     "description": "Unprecedented 30fps burst shooting 8K video that doesn't overheat Hybrid CFexpress A and SD card slots",
+     "price": "700.99",
+     "image": "https://cdn.mos.cms.futurecdn.net/vZ2tinWHRDepsDRHioREzS-970-80.jpg"
+    },
+    {
+     "id": "103",
+     "cameraname": "Olympus OM-D E-M10 Mark IV",
+     "description": "The Olympus OM-D E-M10 Mark IV is a mirrorless camera that features a 24.2 megapixel sensor, a built-in wide-angle lens, and a built-in flash.",
+     "price": "600.99",
+     "image": "https://cdn.mos.cms.futurecdn.net/72JdsqNXQ3uBhq7MTRQ2A5-970-80.jpg.webp"
+    },
+    {
+     "id": "104",
+     "cameraname": "Fujifilm X-T30",
+     "description": "10-minute limit for 4K video recording No weather sealing No water damage No dust damage",
+     "price": "650.99",
+     "image": "https://cdn.mos.cms.futurecdn.net/X3FmZYhFb634MTf6EhiYUU-970-80.jpg.webp"
+    },
+    {
+     "id": "105",
+     "cameraname": "Nikon Z fc",
+     "description": "Nikon's new mirrorless on the block is styled with retro cool ",
+     "price": "640.99",
+     "image": "https://cdn.mos.cms.futurecdn.net/q5QJfoFyjc9BLRqhzQRJj8-970-80.jpg.webp"
+    },
+    {
+     "id": "106",
+     "cameraname": "Canon PowerShot G1 X Mark III",
+     "description": "One of the best compact cameras for serious enthusiasts",
+     "price": "600.99",
+     "image": "https://cdn.mos.cms.futurecdn.net/TKSibdQmmy9uKgVvkggkDF-970-80.jpg.webp"
+    }
+   ]

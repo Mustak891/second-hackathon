@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import ResponsiveAppBar  from './components/navbar';
+import { Routes, Route } from 'react-router-dom';
+import { Search } from './components/search';
+import { Camera } from './components/camera';
+import Button from '@mui/material/Button';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import { Link } from "react-router-dom";
+import AddCamera from './components/addcamera';
+import UpdateCamera from './components/updatecamera';
+import Cart from './components/cart';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+       <Route path='/' element={[<ResponsiveAppBar />, <Search />, <Home />, <Camera />]} /> 
+       <Route path='/addcamera' element={[<ResponsiveAppBar />, <AddCamera />]} />
+       <Route path='/updatecamera' element={[<ResponsiveAppBar />, <UpdateCamera />]} />
+       <Route path='/cart' element={[<ResponsiveAppBar />, <Cart />]} />
+      </Routes>
+    </div> 
+  );
+}
+
+function Home() {
+  return (
+    <div className="Home">
+    <div className='categories'>
+      <h1>categories</h1>
+    </div>
+    <div className='categories_list'>
+      <h3>Camera</h3>
+      <div>
+        <Link to="/addcamera" style={{ textDecoration: 'none'}}><Button variant="contained"><AddCircleIcon />&nbsp;Add camera</Button></Link>
+      </div>
+      </div>
     </div>
   );
 }
