@@ -47,7 +47,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   }));
   
 
-const pages = [<Link to='/' style={{ textDecoration: 'none', color: "white"}}>home</Link>, 'users'];
+const pages = [<Link to='/home' style={{ textDecoration: 'none', color: "white"}}>home</Link>, 'users'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {

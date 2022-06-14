@@ -33,7 +33,7 @@ function Cart(){
     function removeitem(){
         return(
         localStorage.clear('id'),
-        navigate('/')
+        navigate('/home')
         )
     }
 

@@ -11,6 +11,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { useNavigate } from 'react-router-dom';
 
+
 export function Camera(){
 
     const navigate = useNavigate();
@@ -40,8 +41,9 @@ export function Camera(){
         .then(res => res.json()).then(data => {setCamera(data)})
     },[])
 
+    
     const handleDelete = async (id) => {
-        await fetch(api_url + id, {method: 'DELETE'})
+        await fetch(api_url + id , {method: 'DELETE'})
         setCamera(camera.filter(data => data.id !== id))
         } 
 

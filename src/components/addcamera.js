@@ -16,7 +16,7 @@ export default function AddCamera(){
       })
     
       const { handleSubmit, values, handleChange, handleBlur, errors, touched } = useFormik({
-        initialValues:{cameraname: "", description: "",  price: "", image: ""},
+        initialValues:{cameraname: "", description: "",  price: "", image: "", id: ""},
         validationSchema: formvalidationSchema,
         onSubmit: (values) => {postData(values)},
       });
@@ -30,9 +30,9 @@ export default function AddCamera(){
           {method:"POST", 
           body: JSON.stringify(values),
           mode: 'cors',
-          headers:{ "access-control-allow-origin" : "*", 'Content-Type': 'application/json'}
+          headers:{ 'Content-Type': 'application/json'}
         })}
-      catch{console.log((error) => error)}navigate('/')
+      catch{console.log((error) => error)}navigate('/home')
     }
     return(
         <div className='cameraform'>
@@ -53,7 +53,7 @@ export default function AddCamera(){
 
       <TextField style={{width: "400px"}} name='image' onChange={handleChange} onBlur={handleBlur}  value={values.image}  label="image" variant="outlined" error={errors.image && touched.image}  helperText={errors.image && touched.image ? errors.image : ""} /><br />
 
-      <Button variant="contained" type='submit' >Submit</Button><Button variant="contained" onClick={() => navigate('/')}>Cancel</Button>
+      <Button variant="contained" type='submit' >Submit</Button><Button variant="contained" onClick={() => navigate('/home')}>Cancel</Button>
     </Box>
      </form>
      </div>

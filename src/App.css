@@ -52,3 +52,15 @@
 .adddatahead{
     padding: 20px;
 }
+
+.Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    height: 600px;
+    background-color: #f2f2f2;
+}

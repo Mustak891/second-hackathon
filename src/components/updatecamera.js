@@ -51,12 +51,12 @@ export default function UpdateCamera(){
 
       <TextField style={{width: "400px"}} name='image' onChange={handleChange} onBlur={handleBlur}  value={values.image}  label="image" variant="outlined" error={errors.image && touched.image}  helperText={errors.image && touched.image ? errors.image : ""} /><br />
 
-      <Button variant="contained" type='submit' >Submit</Button><Button variant="contained" onClick={() => navigate('/')}>Cancel</Button>
+      <Button variant="contained" type='submit' >Submit</Button><Button variant="contained" onClick={() => navigate('/home')}>Cancel</Button>
     </Box>
-     </form>
-     </div>
-       </div>
-        </div> 
+    </form>
+    </div>
+    </div>
+      </div> 
         </div>
     )
 }
