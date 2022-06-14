@@ -30,7 +30,7 @@ export default function AddCamera(){
           {method:"POST", 
           body: JSON.stringify(values),
           mode: 'cors',
-          headers:{'Content-Type': 'application/json'}
+          headers:{ "access-control-allow-origin" : "*", 'Content-Type': 'application/json'}
         })}
       catch{console.log((error) => error)}navigate('/')
     }
