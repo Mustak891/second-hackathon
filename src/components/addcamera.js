@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function AddCamera(){
     const formvalidationSchema = yup.object({
+        id: yup.string().required('No id provided ⚠️').min(2, 'No must be at least 2 characters long').max(20, 'No must be at most 20 characters long'),
         cameraname: yup.string().required('Name is required ⚠️').min(3, 'Name must be at least 3️⃣ characters long'),
         description: yup.string().required('description is required ⚠️').min(3, 'description must be at least 3️⃣ characters long'),
         price: yup.string().required('price is required ⚠️').max(9999999999, 'price must be at least 🔟 characters long'),
@@ -44,6 +45,8 @@ export default function AddCamera(){
         <div className="addnew">
         <form onSubmit={handleSubmit} className="border">
         <Box sx={{'& > :not(style)': { m: 1, width: '25ch' },}} noValidate autoComplete="off" > 
+
+      <TextField style={{width: "400px"}} id="id" label="Part No" name="id" value={values.id} onChange={handleChange} onBlur={handleBlur} error={errors.id && touched.id} helperText={errors.id && touched.id && errors.id} /><br />
        
       <TextField style={{width: "400px"}} name='cameraname' onChange={handleChange} onBlur={handleBlur}  value={values.cameraname}  label="Name" variant="outlined" error={errors.cameraname && touched.cameraname} helperText={errors.cameraname && touched.cameraname ? errors.cameraname : ""} /><br />
   

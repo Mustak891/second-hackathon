@@ -30,7 +30,7 @@ export default function UpdateCamera(){
       const editData = async () => {
       try{ await fetch(api_url + values.id,{method:"PUT", headers:{'Content-Type': 'application/json'},
           body: JSON.stringify(values)})}
-      catch{console.log((error) => error)}navigate('/')}
+      catch{console.log((error) => error)}navigate('/home')}
       
     return(
         <div className='cameraform'>
